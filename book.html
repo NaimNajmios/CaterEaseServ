@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Service | Booking</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar start -->
+  <div class="container-fluid nav-bar">
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg py-4">
+        <a href="index.html" class="navbar-brand">
+          <h1 class="text-primary fw-bold mb-0">
+            Cater<span class="text-dark">Ease</span>
+          </h1>
+        </a>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="event.html" class="nav-item nav-link">Events</a>
+            <a href="menu.html" class="nav-item nav-link">Menu</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Book Now</a>
+              <div class="dropdown-menu bg-light">
+                <a href="book.html" class="dropdown-item">Booking</a>
+                <a href="contact.html" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+            <a href="faq.html" class="nav-item nav-link">FAQ</a>
+          </div>
+          <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+            data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Search by keyword
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+              aria-describedby="search-icon-1" />
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+  <!-- Hero Start -->
+  <div class="container-fluid bg-light py-6 my-6 mt-0">
+    <div class="container text-center animated bounceInDown">
+      <h1 class="display-1 mb-4">Booking</h1>
+      <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item text-dark" aria-current="page">Booking</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Hero End -->
+
+  <!-- Form Section -->
+  <div class="container py-5" id="section1">
+    <section class="contact-form">
+      <h1 class="text-center mb-3 display-1">Ready to Cater Your Event?</h1>
+      <div class="form-container">
+        <form id="quoteForm" onsubmit="return false;">
+          <!-- Contact Information -->
+          <div class="form-section mb-5">
+            <h2 class="display-5 mb-3"><i class="icon fas fa-user me-2"></i>Contact Information</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Full Name <span class="text-danger">*</span></label>
+                <input type="text" name="fullName" class="form-control" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Email Address <span class="text-danger">*</span></label>
+                <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Phone Number <span class="text-danger">*</span></label>
+                <input type="tel" name="phone" class="form-control" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Best Time to Contact</label>
+                <select name="contactTime" class="form-select">
+                  <option value="">Select a time</option>
+                  <option value="morning">Morning</option>
+                  <option value="afternoon">Afternoon</option>
+                  <option value="evening">Evening</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Details -->
+          <div class="form-section mb-5">
+            <h2 class="display-5 mb-4"><i class="icon fas fa-calendar me-2"></i>Event Details</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Event Type <span class="text-danger">*</span></label>
+                <select name="eventType" class="form-select" required>
+                  <option value="">Select event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="social">Social Gathering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Event Date <span class="text-danger">*</span></label>
+                <input type="date" name="eventDate" class="form-control" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Event Start Time</label>
+                <input type="time" name="eventTime" class="form-control">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Event Duration</label>
+                <select name="duration" class="form-select">
+                  <option value="">Select duration</option>
+                  <option value="2-4">2-4 hours</option>
+                  <option value="4-6">4-6 hours</option>
+                  <option value="6+">6+ hours</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Number of Guests <span class="text-danger">*</span></label>
+                <input type="number" name="guests" class="form-control" required min="1">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Event Location</label>
+                <input type="text" name="location" class="form-control">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Venue Name (if known)</label>
+                <input type="text" name="venue" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Requirements -->
+          <div class="form-section mb-5">
+            <h2 class="display-5 mb-4"><i class="icon fas fa-tools me-2"></i>Service Requirements</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Service Type <span class="text-danger">*</span></label>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="fullService" id="fullService"
+                    class="form-check-input">
+                  <label for="fullService" class="form-check-label">Full-Service Catering</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="dropOff" id="dropOff" class="form-check-input">
+                  <label for="dropOff" class="form-check-label">Drop-off Catering</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="buffet" id="buffet" class="form-check-input">
+                  <label for="buffet" class="form-check-label">Buffet Service</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="plated" id="plated" class="form-check-input">
+                  <label for="plated" class="form-check-label">Plated Service</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="bar" id="bar" class="form-check-input">
+                  <label for="bar" class="form-check-label">Bar Service</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="serviceType" value="staffOnly" id="staffOnly" class="form-check-input">
+                  <label for="staffOnly" class="form-check-label">Staff Only</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Preferences -->
+          <div class="form-section mb-5">
+            <h2 class="display-5 mb-4"><i class="icon fas fa-utensils me-2"></i>Menu Preferences</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Meal Type <span class="text-danger">*</span></label>
+                <div class="form-check">
+                  <input type="checkbox" name="mealType" value="breakfast" id="breakfast" class="form-check-input">
+                  <label for="breakfast" class="form-check-label">Breakfast/Brunch</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="mealType" value="lunch" id="lunch" class="form-check-input">
+                  <label for="lunch" class="form-check-label">Lunch</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="mealType" value="dinner" id="dinner" class="form-check-input">
+                  <label for="dinner" class="form-check-label">Dinner</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="mealType" value="desserts" id="desserts" class="form-check-input">
+                  <label for="desserts" class="form-check-label">Desserts</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="mealType" value="beverages" id="beverages" class="form-check-input">
+                  <label for="beverages" class="form-check-label">Beverages</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Dietary Restrictions</label>
+                <div class="form-check">
+                  <input type="checkbox" name="dietary" value="vegetarian" id="vegetarian" class="form-check-input">
+                  <label for="vegetarian" class="form-check-label">Vegetarian</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="dietary" value="vegan" id="vegan" class="form-check-input">
+                  <label for="vegan" class="form-check-label">Vegan</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="dietary" value="glutenFree" id="glutenFree" class="form-check-input">
+                  <label for="glutenFree" class="form-check-label">Gluten-free</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="dietary" value="dairyFree" id="dairyFree" class="form-check-input">
+                  <label for="dairyFree" class="form-check-label">Dairy-free</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="dietary" value="halal" id="halal" class="form-check-input">
+                  <label for="halal" class="form-check-label">Halal</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Services -->
+          <div class="form-section mb-5">
+            <h2 class="display-5 mb-4"><i class="icon fas fa-plus me-2"></i>Additional Services</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Additional Requirements</label>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="tables" id="tables" class="form-check-input">
+                  <label for="tables" class="form-check-label">Tables and Chairs</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="linens" id="linens" class="form-check-input">
+                  <label for="linens" class="form-check-label">Linens</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="tableware" id="tableware" class="form-check-input">
+                  <label for="tableware" class="form-check-label">Tableware</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="decorations" id="decorations"
+                    class="form-check-input">
+                  <label for="decorations" class="form-check-label">Decorations</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="tent" id="tent" class="form-check-input">
+                  <label for="tent" class="form-check-label">Tent/Outdoor Setup</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="additional" value="music" id="music" class="form-check-input">
+                  <label for="music" class="form-check-label">Music/Entertainment</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label h5">Budget Range <span class="text-danger">*</span></label>
+                <select name="budget" class="form-select" required>
+                  <option value="">Select budget range</option>
+                  <option value="under5000">Under RM 5,000</option>
+                  <option value="5000-10000">RM 5,000 - RM 10,000</option>
+                  <option value="10000-20000">RM 10,000 - RM 20,000</option>
+                  <option value="20000-50000">RM 20,000 - RM 50,000</option>
+                  <option value="50000plus">RM 50,000+</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label h5">Special Requests or Additional Information</label>
+                <textarea name="specialRequests" class="form-control" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terms and Submit -->
+          <div class="form-section">
+            <div class="form-check mb-3">
+              <input type="checkbox" name="terms" id="terms" class="form-check-input" required>
+              <label for="terms" class="form-check-label h5">I agree to the terms and conditions <span
+                  class="text-danger">*</span></label>
+            </div>
+            <p class="text-muted"><span class="text-danger">*</span> Required fields</p>
+            <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h1 class="text-primary">
+              Cater<span class="text-dark">Ease</span>
+            </h1>
+            <p class="lh-lg mb-4">Your Vision, Our Expertise.</p>
+            <div class="footer-icon d-flex">
+              <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Special Facilities</h4>
+            <div class="d-flex flex-column align-items-start">
+              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Wedding
+                Catering</a>
+              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Corporate
+                Events</a>
+              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Community
+                Festival</a>
+              <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Custom Menu
+                Design</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Contact Us</h4>
+            <div class="d-flex flex-column align-items-start">
+              <p>
+                <i class="fa fa-map-marker-alt text-primary me-2"></i> UMT
+                Street, 21300 Kuala Terengganu, Terengganu.
+              </p>
+              <p>
+                <i class="fa fa-phone-alt text-primary me-2"></i> (+60) 1932
+                20658
+              </p>
+              <p>
+                <i class="fas fa-envelope text-primary me-2"></i>
+                caterease@gmail.com
+              </p>
+              <p>
+                <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
+                Service
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Social Gallery</h4>
+            <div class="row g-2">
+              <div class="col-4">
+                <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+              <div class="col-4">
+                <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+              <div class="col-4">
+                <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+              <div class="col-4">
+                <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+              <div class="col-4">
+                <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+              <div class="col-4">
+                <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

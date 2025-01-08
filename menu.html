@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu | CaterEase</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+      <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="text-primary fw-bold mb-0">
+              Cater<span class="text-dark">Ease</span>
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="event.html" class="nav-item nav-link">Events</a>
+              <a href="menu.html" class="nav-item nav-link active">Menu</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Book Now</a
+                >
+                <div class="dropdown-menu bg-light">
+                  <a href="book.html" class="dropdown-item">Booking</a>
+                  <a href="contact.html" class="dropdown-item">Contact Us</a>
+                </div>
+              </div>
+              <a href="faq.html" class="nav-item nav-link">FAQ</a>
+            </div>
+            <button
+              class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+            <a
+              href=""
+              class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
+              >Book Now</a
+            >
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Search by keyword
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control bg-transparent p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+      <div class="container text-center animated bounceInDown">
+        <h1 class="display-1 mb-4">Menu</h1>
+        <ol
+          class="breadcrumb justify-content-center mb-0 animated bounceInDown"
+        >
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item text-dark" aria-current="page">Menu</li>
+        </ol>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Menu Start -->
+    <div class="container-fluid menu py-6">
+      <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+          <small
+            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
+            >Our Menu</small
+          >
+          <h1 class="display-5 mb-5">Most Popular Choices of Fusion Flavors</h1>
+        </div>
+        <div class="tab-class text-center">
+          <ul
+            class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+            data-wow-delay="0.1s"
+          >
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active"
+                data-bs-toggle="pill"
+                href="#tab-6"
+              >
+                <span class="text-dark" style="width: 150px">Appertizers</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-7"
+              >
+                <span class="text-dark" style="width: 150px">Main Course</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-8"
+              >
+                <span class="text-dark" style="width: 150px">Desserts</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-9"
+              >
+                <span class="text-dark" style="width: 150px">Seasonal</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-10"
+              >
+                <span class="text-dark" style="width: 150px"
+                  >Special Dietary</span
+                >
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-6" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-01.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Satay</h4>
+                        <h4 class="text-primary">RM80</h4>
+                      </div>
+                      <p class="mb-0">
+                        Marinated and grilled skewers served with peanut sauce.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-02.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Mini Spring Rolls</h4>
+                        <h4 class="text-primary">RM80</h4>
+                      </div>
+                      <p class="mb-0">
+                        Crispy rolls filled with vegetables or chicken.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Keropok Lekor</h4>
+                        <h4 class="text-primary">RM70</h4>
+                      </div>
+                      <p class="mb-0">Traditional fried fish crackers.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-04.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Prawn Fritters</h4>
+                        <h4 class="text-primary">RM15</h4>
+                      </div>
+                      <p class="mb-0">
+                        Crunchy fritters served with chili sauce.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-05.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Mini Popiah Basah</h4>
+                        <h4 class="text-primary">RM50</h4>
+                      </div>
+                      <p class="mb-0">
+                        Soft rolls stuffed with vegetables and shredded chicken.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-06.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Chicken Lollipop</h4>
+                        <h4 class="text-primary">RM18</h4>
+                      </div>
+                      <p class="mb-0">
+                        Fried drumettes with a sweet-spicy glaze.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Roti Jala</h4>
+                        <h4 class="text-primary">RM60</h4>
+                      </div>
+                      <p class="mb-0">Net crepes served with chicken curry.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-08.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Vegetable Samosa</h4>
+                        <h4 class="text-primary">RM50</h4>
+                      </div>
+                      <p class="mb-0">
+                        Crispy triangles filled with curried vegetables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-7" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-01.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Nasi Lemak Set</h4>
+                        <h4 class="text-primary">RM15</h4>
+                      </div>
+                      <p class="mb-0">
+                        Fragrant coconut rice with sambal, fried chicken, boiled
+                        egg, anchovies, and peanuts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Ayam Masak Merah</h4>
+                        <h4 class="text-primary">RM18</h4>
+                      </div>
+                      <p class="mb-0">
+                        Spicy tomato chicken dish served with rice.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-05.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Beef Rendang</h4>
+                        <h4 class="text-primary">RM20</h4>
+                      </div>
+                      <p class="mb-0">
+                        Slow-cooked beef in coconut milk and spices.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Char Kway Teow</h4>
+                        <h4 class="text-primary">M12</h4>
+                      </div>
+                      <p class="mb-0">
+                        Stir-fried flat noodles with prawns, eggs, and bean
+                        sprouts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-08.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Chicken Percik</h4>
+                        <h4 class="text-primary">RM18</h4>
+                      </div>
+                      <p class="mb-0">
+                        Grilled chicken in creamy coconut and chili sauce.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Fish Curry</h4>
+                        <h4 class="text-primary">RM22</h4>
+                      </div>
+                      <p class="mb-0">Spicy curry with snapper or mackerel.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-02.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Mee Rebus</h4>
+                        <h4 class="text-primary">RM10</h4>
+                      </div>
+                      <p class="mb-0">
+                        Yellow noodles in a thick, spicy potato-based gravy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-01.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Nasi Kandar Set</h4>
+                        <h4 class="text-primary">RM20</h4>
+                      </div>
+                      <p class="mb-0">
+                        Rice with mixed curries, fried chicken, okra, and boiled
+                        egg.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-8" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-01.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Kuih Lapis</h4>
+                        <h4 class="text-primary">RM20</h4>
+                      </div>
+                      <p class="mb-0">Multi-layered steamed rice cake.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-02.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Onde-Onde</h4>
+                        <h4 class="text-primary">RM10</h4>
+                      </div>
+                      <p class="mb-0">
+                        Glutinous rice balls filled with palm sugar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Pisang Goreng with Gula Melaka Drizzle</h4>
+                        <h4 class="text-primary">RM8</h4>
+                      </div>
+                      <p class="mb-0">
+                        Fried bananas with caramelized palm sugar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-04.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Mango Sticky Rice</h4>
+                        <h4 class="text-primary">RM12</h4>
+                      </div>
+                      <p class="mb-0">
+                        Glutinous rice served with mango slices and coconut
+                        cream.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-05.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Agar-Agar Santan</h4>
+                        <h4 class="text-primary">RM1.50</h4>
+                      </div>
+                      <p class="mb-0">Coconut milk jelly.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-06.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Kuih Seri Muka</h4>
+                        <h4 class="text-primary">RM10</h4>
+                      </div>
+                      <p class="mb-0">
+                        Sticky rice with pandan custard topping.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Bubur Cha Cha</h4>
+                        <h4 class="text-primary">RM8</h4>
+                      </div>
+                      <p class="mb-0">
+                        Sweet coconut milk dessert with yam and tapioca pearls.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-08.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Cendol</h4>
+                        <h4 class="text-primary">RM5</h4>
+                      </div>
+                      <p class="mb-0">
+                        Shaved ice dessert with palm sugar, pandan jelly, and
+                        coconut milk.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-9" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-06.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Hari Raya Aidilfitri</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Celebrates the end of Ramadan with feasts, traditional
+                        attire, and family gatherings. Rendang, lemang, and
+                        ketupat are must-haves!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Chinese New Year</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Marks the lunar new year with lion dances, red packets,
+                        and a reunion dinner featuring yee sang and dumplings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-09.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Deepavali</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Known as the Festival of Lights, it includes kolam
+                        decorations, sweet treats like ladoo, and festive
+                        curries.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-02.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Christmas</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Celebrated with Christmas trees, caroling, and festive
+                        meals featuring roasted meats, fruitcakes, and eggnog.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Songkran</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Celebrated by the Malaysian Siamese community with
+                        water-splashing festivities, dishes like som tam (papaya
+                        salad) and mango sticky rice are enjoyed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-05.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Kaamatan (Harvest Festival)</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Celebrated in Sabah with cultural dances, rice wine
+                        (tapai), and traditional dishes like hinava (marinated
+                        fish).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Gawai Dayak</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        A harvest festival in Sarawak with tuak (rice wine),
+                        bamboo rice, and cultural performances to honor the
+                        bountiful harvest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-09.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Hari Moyang</h4>
+                        <h4 class="text-primary">RM1000</h4>
+                      </div>
+                      <p class="mb-0">
+                        Celebrated by the Mah Meri tribe, is a significant
+                        cultural event where ancestors are honored through
+                        rituals, dances, and communal gatherings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-10" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-06.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Vegetarian Nasi Lemak</h4>
+                        <h4 class="text-primary">RM10</h4>
+                      </div>
+                      <p class="mb-0">
+                        Coconut rice served with vegetarian sambal, fried
+                        tempeh, and peanuts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Gluten-Free Mee Hoon Goreng</h4>
+                        <h4 class="text-primary">RM12</h4>
+                      </div>
+                      <p class="mb-0">
+                        Stir-fried rice vermicelli with vegetables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-09.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Vegan Jackfruit Rendang</h4>
+                        <h4 class="text-primary">RM18</h4>
+                      </div>
+                      <p class="mb-0">
+                        Plant-based alternative to beef rendang.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-02.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Low-Carb Cauliflower Nasi Goreng</h4>
+                        <h4 class="text-primary">RM15</h4>
+                      </div>
+                      <p class="mb-0">
+                        Fried cauliflower rice with chicken and vegetables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-03.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Dairy-Free Curry Laksa</h4>
+                        <h4 class="text-primary">RM15</h4>
+                      </div>
+                      <p class="mb-0">
+                        Spicy coconut-based soup with rice noodles and seafood.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-05.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Keto-Friendly Ayam Percik</h4>
+                        <h4 class="text-primary">RM20</h4>
+                      </div>
+                      <p class="mb-0">
+                        Grilled chicken in low-sugar coconut sauce.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-07.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Halal Bento Box (Fish)</h4>
+                        <h4 class="text-primary">RM25</h4>
+                      </div>
+                      <p class="mb-0">
+                        Rice, grilled fish, and steamed vegetables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="menu-item d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded-circle"
+                      src="img/menu-09.jpg"
+                      alt=""
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <div
+                        class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2"
+                      >
+                        <h4>Diabetic-Friendly Bubur Pulut Hitam</h4>
+                        <h4 class="text-primary">RM10</h4>
+                      </div>
+                      <p class="mb-0">
+                        Sweet black glutinous rice porridge with reduced sugar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h1 class="text-primary">
+                Cater<span class="text-dark">Ease</span>
+              </h1>
+              <p class="lh-lg mb-4">Your Vision, Our Expertise.</p>
+              <div class="footer-icon d-flex">
+                <a
+                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-sm-square me-2 rounded-circle"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">Special Facilities</h4>
+              <div class="d-flex flex-column align-items-start">
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary me-2"></i>Wedding
+                  Catering</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary me-2"></i>Corporate
+                  Events</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary me-2"></i>Community
+                  Festival</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary me-2"></i>Custom Menu
+                  Design</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">Contact Us</h4>
+              <div class="d-flex flex-column align-items-start">
+                <p>
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> UMT
+                  Street, 21300 Kuala Terengganu, Terengganu.
+                </p>
+                <p>
+                  <i class="fa fa-phone-alt text-primary me-2"></i> (+60) 1932
+                  20658
+                </p>
+                <p>
+                  <i class="fas fa-envelope text-primary me-2"></i>
+                  caterease@gmail.com
+                </p>
+                <p>
+                  <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
+                  Service
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">Social Gallery</h4>
+              <div class="row g-2">
+                <div class="col-4">
+                  <img
+                    src="img/menu-01.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-02.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-03.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-04.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-05.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-06.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

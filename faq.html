@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Event | CaterEase</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar start -->
+  <div class="container-fluid nav-bar">
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg py-4">
+        <a href="index.html" class="navbar-brand">
+          <h1 class="text-primary fw-bold mb-0">
+            Cater<span class="text-dark">Ease</span>
+          </h1>
+        </a>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="event.html" class="nav-item nav-link">Events</a>
+            <a href="menu.html" class="nav-item nav-link">Menu</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Now</a>
+              <div class="dropdown-menu bg-light">
+                <a href="book.html" class="dropdown-item">Booking</a>
+                <a href="contact.html" class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+            <a href="faq.html" class="nav-item nav-link">FAQ</a>
+          </div>
+          <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+            data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Search by keyword
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+              aria-describedby="search-icon-1" />
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+  <!-- Hero Start -->
+  <div class="container-fluid bg-light py-6 my-6 mt-0">
+    <div class="container text-center animated bounceInDown">
+      <h1 class="display-1 mb-4">FAQ</h1>
+      <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item text-dark" aria-current="page">FAQ</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Hero End -->
+
+  <!-- Article -->
+  <!-- Brief introduction to menu available and packages -->
+  <!-- Events Start -->
+  <div class="container-fluid event py-6">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">FAQ
+          Section</small>
+        <h1 class="display-5 mb-5">
+          Got Questions? We've Got Answers
+        </h1>
+        <p>Welcome to our FAQ page! We're here to help you get the most out of CaterEase Catering Service.
+          Whether
+          you're a new user or a seasoned pro, you'll find the answers you need here. If you have any further
+          questions, please feel free to contact us.</p>
+        </article>
+      </div>
+
+      <!-- FAQ Start -->
+
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <i class="icon fa fa-weight me-2"></i>What is your minimum order?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our minimum order is for [insert number] guests. However, we are always happy to discuss smaller events on a
+                case-by-case basis.
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <i class="icon fa fa-edit me-2"></i>Do you offer custom menus?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we specialize in creating custom menus to suit your specific tastes and event requirements. We can
+                accommodate a variety of dietary restrictions and preferences.
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="icon fa fa-map-marker me-2"></i>What areas do you serve?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We primarily serve the [insert city/region] area. However, we are open to catering events in other locations.
+                Please contact us for a quote.
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="icon fa fa-credit-card me-2"></i>What kind of payment methods do you accept?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We accept [list of accepted payment methods, e.g., credit card, debit card, cash].
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="icon fa fa-users me-2"></i>Do you provide serving staff?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we offer professional serving staff to ensure a smooth and efficient event. You can choose from a variety
+                of service styles to meet your needs.
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix">
+                <i class="icon fa fa-leaf me-2"></i>Do you have any dietary restrictions you can accommodate?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we can accommodate a variety of dietary restrictions, including vegetarian, vegan, gluten-free, and
+                dairy-free. Please let us know your specific needs when you place your order.
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQ Item 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="icon fa fa-calendar me-2"></i>What is your cancellation policy?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our cancellation policy can be found in our terms and conditions. Please review our policy for more details.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ End -->
+
+      <!-- Footer Start -->
+      <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-item">
+                <h1 class="text-primary">
+                  Cater<span class="text-dark">Ease</span>
+                </h1>
+                <p class="lh-lg mb-4">Your Vision, Our Expertise.</p>
+                <div class="footer-icon d-flex">
+                  <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                      class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                      class="fab fa-twitter"></i></a>
+                  <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i
+                      class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-item">
+                <h4 class="mb-4">Special Facilities</h4>
+                <div class="d-flex flex-column align-items-start">
+                  <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Wedding
+                    Catering</a>
+                  <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Corporate
+                    Events</a>
+                  <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Community
+                    Festival</a>
+                  <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Custom Menu
+                    Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-item">
+                <h4 class="mb-4">Contact Us</h4>
+                <div class="d-flex flex-column align-items-start">
+                  <p>
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i> UMT
+                    Street, 21300 Kuala Terengganu, Terengganu.
+                  </p>
+                  <p>
+                    <i class="fa fa-phone-alt text-primary me-2"></i> (+60) 1932
+                    20658
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope text-primary me-2"></i>
+                    caterease@gmail.com
+                  </p>
+                  <p>
+                    <i class="fa fa-clock text-primary me-2"></i> 24/7 Hours
+                    Service
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-item">
+                <h4 class="mb-4">Social Gallery</h4>
+                <div class="row g-2">
+                  <div class="col-4">
+                    <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+</body>
+
+</html>
