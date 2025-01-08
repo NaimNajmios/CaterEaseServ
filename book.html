@@ -61,7 +61,7 @@
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Book Now</a>
               <div class="dropdown-menu bg-light">
-                <a href="book.html" class="dropdown-item">Booking</a>
+                <a href="book.html" class="dropdown-item active">Booking</a>
                 <a href="contact.html" class="dropdown-item">Contact Us</a>
               </div>
             </div>
@@ -113,30 +113,32 @@
   </div>
   <!-- Hero End -->
 
-  <!-- Form Section -->
+  <!-- Booking Form Start -->
+
+  <!-- Form section -->
   <div class="container py-5" id="section1">
-    <section class="contact-form">
-      <h1 class="text-center mb-3 display-1">Ready to Cater Your Event?</h1>
+    <section class="contact-form p-5">
+      <h2 class="text-center mb-4">Ready to Cater Your Event?</h2>
       <div class="form-container">
         <form id="quoteForm" onsubmit="return false;">
           <!-- Contact Information -->
           <div class="form-section mb-5">
-            <h2 class="display-5 mb-3"><i class="icon fas fa-user me-2"></i>Contact Information</h2>
+            <h5 class="mb-4"><i class="icon fas fa-user me-2"></i>Contact Information</h5>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Full Name <span class="text-danger">*</span></label>
+                <label class="form-label">Full Name <span class="text-danger">*</span></label>
                 <input type="text" name="fullName" class="form-control" required>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Email Address <span class="text-danger">*</span></label>
+                <label class="form-label">Email Address <span class="text-danger">*</span></label>
                 <input type="email" name="email" class="form-control" required>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Phone Number <span class="text-danger">*</span></label>
+                <label class="form-label">Phone Number <span class="text-danger">*</span></label>
                 <input type="tel" name="phone" class="form-control" required>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Best Time to Contact</label>
+                <label class="form-label">Best Time to Contact</label>
                 <select name="contactTime" class="form-select">
                   <option value="">Select a time</option>
                   <option value="morning">Morning</option>
@@ -149,10 +151,10 @@
 
           <!-- Event Details -->
           <div class="form-section mb-5">
-            <h2 class="display-5 mb-4"><i class="icon fas fa-calendar me-2"></i>Event Details</h2>
+            <h5 class="mb-4"><i class="icon fas fa-calendar me-2"></i>Event Details</h5>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Event Type <span class="text-danger">*</span></label>
+                <label class="form-label">Event Type <span class="text-danger">*</span></label>
                 <select name="eventType" class="form-select" required>
                   <option value="">Select event type</option>
                   <option value="wedding">Wedding</option>
@@ -163,15 +165,15 @@
                 </select>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Event Date <span class="text-danger">*</span></label>
+                <label class="form-label">Event Date <span class="text-danger">*</span></label>
                 <input type="date" name="eventDate" class="form-control" required>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Event Start Time</label>
+                <label class="form-label">Event Start Time</label>
                 <input type="time" name="eventTime" class="form-control">
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Event Duration</label>
+                <label class="form-label">Event Duration</label>
                 <select name="duration" class="form-select">
                   <option value="">Select duration</option>
                   <option value="2-4">2-4 hours</option>
@@ -180,15 +182,15 @@
                 </select>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Number of Guests <span class="text-danger">*</span></label>
+                <label class="form-label">Number of Guests <span class="text-danger">*</span></label>
                 <input type="number" name="guests" class="form-control" required min="1">
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Event Location</label>
+                <label class="form-label">Event Location</label>
                 <input type="text" name="location" class="form-control">
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Venue Name (if known)</label>
+                <label class="form-label">Venue Name (if known)</label>
                 <input type="text" name="venue" class="form-control">
               </div>
             </div>
@@ -196,10 +198,10 @@
 
           <!-- Service Requirements -->
           <div class="form-section mb-5">
-            <h2 class="display-5 mb-4"><i class="icon fas fa-tools me-2"></i>Service Requirements</h2>
+            <h5 class="mb-4"><i class="icon fas fa-tools me-2"></i>Service Requirements</h5>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Service Type <span class="text-danger">*</span></label>
+                <label class="form-label">Service Type <span class="text-danger">*</span></label>
                 <div class="form-check">
                   <input type="checkbox" name="serviceType" value="fullService" id="fullService"
                     class="form-check-input">
@@ -231,10 +233,10 @@
 
           <!-- Menu Preferences -->
           <div class="form-section mb-5">
-            <h2 class="display-5 mb-4"><i class="icon fas fa-utensils me-2"></i>Menu Preferences</h2>
+            <h5 class="mb-4"><i class="icon fas fa-utensils me-2"></i>Menu Preferences</h5>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Meal Type <span class="text-danger">*</span></label>
+                <label class="form-label">Meal Type <span class="text-danger">*</span></label>
                 <div class="form-check">
                   <input type="checkbox" name="mealType" value="breakfast" id="breakfast" class="form-check-input">
                   <label for="breakfast" class="form-check-label">Breakfast/Brunch</label>
@@ -257,7 +259,7 @@
                 </div>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Dietary Restrictions</label>
+                <label class="form-label">Dietary Restrictions</label>
                 <div class="form-check">
                   <input type="checkbox" name="dietary" value="vegetarian" id="vegetarian" class="form-check-input">
                   <label for="vegetarian" class="form-check-label">Vegetarian</label>
@@ -284,10 +286,10 @@
 
           <!-- Additional Services -->
           <div class="form-section mb-5">
-            <h2 class="display-5 mb-4"><i class="icon fas fa-plus me-2"></i>Additional Services</h2>
+            <h5 class="mb-4"><i class="icon fas fa-plus me-2"></i>Additional Services</h5>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Additional Requirements</label>
+                <label class="form-label">Additional Requirements</label>
                 <div class="form-check">
                   <input type="checkbox" name="additional" value="tables" id="tables" class="form-check-input">
                   <label for="tables" class="form-check-label">Tables and Chairs</label>
@@ -315,7 +317,7 @@
                 </div>
               </div>
               <div class="col-md-6 mb-3">
-                <label class="form-label h5">Budget Range <span class="text-danger">*</span></label>
+                <label class="form-label">Budget Range <span class="text-danger">*</span></label>
                 <select name="budget" class="form-select" required>
                   <option value="">Select budget range</option>
                   <option value="under5000">Under RM 5,000</option>
@@ -326,7 +328,7 @@
                 </select>
               </div>
               <div class="col-12 mb-3">
-                <label class="form-label h5">Special Requests or Additional Information</label>
+                <label class="form-label">Special Requests or Additional Information</label>
                 <textarea name="specialRequests" class="form-control" rows="4"></textarea>
               </div>
             </div>
@@ -336,7 +338,7 @@
           <div class="form-section">
             <div class="form-check mb-3">
               <input type="checkbox" name="terms" id="terms" class="form-check-input" required>
-              <label for="terms" class="form-check-label h5">I agree to the terms and conditions <span
+              <label for="terms" class="form-check-label">I agree to the terms and conditions <span
                   class="text-danger">*</span></label>
             </div>
             <p class="text-muted"><span class="text-danger">*</span> Required fields</p>
@@ -346,6 +348,8 @@
       </div>
     </section>
   </div>
+
+  <!-- Booking Form End -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
