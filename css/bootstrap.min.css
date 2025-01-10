@@ -610,6 +610,12 @@ progress {
     height: auto
 }
 
+.img-fluid-menu {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -8495,6 +8501,7 @@ fieldset:disabled .btn {
 
 .rounded-circle {
     border-radius: 50% !important
+
 }
 
 .rounded-pill {
