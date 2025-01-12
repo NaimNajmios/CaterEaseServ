@@ -266,6 +266,11 @@ h6,
   color: var(--bs-dark);
 }
 
+.service-item:hover .service-content-icon li {
+  color: var(--bs-dark);
+}
+
+
 .service-item .service-content-icon a.btn-primary {
   transition: 1s !important;
 }
