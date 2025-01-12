@@ -10,22 +10,24 @@
         }, 1);
     };
     spinner(0);
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
-    
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -66,17 +68,17 @@
         autoplaySpeed: 10000,
         autoplayHoverPause: false,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            575:{
-                items:1
+            575: {
+                items: 1
             },
-            767:{
-                items:2
+            767: {
+                items: 2
             },
-            991:{
-                items:3
+            991: {
+                items: 3
             }
         }
     });
@@ -92,22 +94,35 @@
         autoplaySpeed: 10000,
         autoplayHoverPause: false,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            575:{
-                items:1
+            575: {
+                items: 1
             },
-            767:{
-                items:2
+            767: {
+                items: 2
             },
-            991:{
-                items:3
+            991: {
+                items: 3
             }
         }
     });
 
 })(jQuery);
 
+document.getElementById('quoteForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
 
+    // Show the alert notification
+    const alertNotification = document.getElementById('alertNotification');
+    alertNotification.classList.remove('d-none');
 
+    // Optionally, hide the alert after a few seconds
+    setTimeout(() => {
+        alertNotification.classList.add('d-none');
+    }, 10000); // Hide after 5 seconds
+
+    // Optionally, reset the form after submission
+    this.reset();
+});

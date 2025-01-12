@@ -105,8 +105,8 @@
     <div class="container text-center animated bounceInDown">
       <h1 class="display-1 mb-4">Booking</h1>
       <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Book Now</a></li>
         <li class="breadcrumb-item text-dark" aria-current="page">Booking</li>
       </ol>
     </div>
@@ -114,13 +114,15 @@
   <!-- Hero End -->
 
   <!-- Booking Form Start -->
-
-  <!-- Form section -->
   <div class="container py-5" id="section1">
     <section class="contact-form p-5">
       <h2 class="text-center mb-4">Ready to Cater Your Event?</h2>
+      <!-- Alert Notification -->
+      <div id="alertNotification" class="alert alert-success d-none" role="alert">
+        Your quote request has been submitted successfully!
+      </div>
       <div class="form-container">
-        <form id="quoteForm" onsubmit="return false;">
+        <form id="quoteForm">
           <!-- Contact Information -->
           <div class="form-section mb-5">
             <h5 class="mb-4"><i class="icon fas fa-user me-2"></i>Contact Information</h5>
@@ -348,7 +350,6 @@
       </div>
     </section>
   </div>
-
   <!-- Booking Form End -->
 
   <!-- Footer Start -->
