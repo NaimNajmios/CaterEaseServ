@@ -166,6 +166,48 @@ h6,
 
 /*** Navbar End ***/
 
+/* Logo */
+/* Custom CSS for Logo */
+.navbar-logo {
+  text-decoration: none;
+  /* Remove underline from the logo link */
+  transition: transform 0.3s ease;
+  /* Add smooth transition for hover effect */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  /* Slightly scale up the logo on hover */
+}
+
+.logo-img {
+  width: 60px;
+  /* Set logo image width */
+  height: 60px;
+  /* Set logo image height */
+  transition: transform 0.3s ease;
+  /* Add hover effect to the logo image */
+}
+
+.navbar-logo:hover .logo-img {
+  transform: rotate(10deg);
+  /* Rotate the logo image on hover */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  /* Adjust logo text size */
+  transition: color 0.3s ease;
+  /* Add hover effect to the logo text */
+}
+
+.navbar-logo:hover .logo-text {
+  color: #ff6347;
+  /* Change text color on hover (e.g., to a coral color) */
+}
+
+/* End Logo */
+
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {
   background: var(--bs-primary) !important;
@@ -267,7 +309,7 @@ h6,
 }
 
 .service-item:hover .service-content-icon li {
-  color: var(--bs-dark);
+  color: #313638;
 }
 
 
