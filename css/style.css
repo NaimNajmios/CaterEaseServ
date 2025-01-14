@@ -551,6 +551,30 @@ h6 {
 
 /*** testimonial End ***/
 
+/* Slider Start */
+
+/* Ensure the slider container is responsive */
+#carouselExampleIndicators {
+  width: 95%;
+  /* Full width */
+  overflow: hidden;
+  /* Hide overflow */
+  margin: 0 auto;
+  /* Center the slider */
+}
+
+/* Make images responsive */
+.carousel-item img {
+  width: 100%;
+  /* Full width of the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure images cover the container */
+}
+
+/* Slider End */
+
 /*** Contact start ***/
 .contact-form {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
