@@ -119,14 +119,14 @@
   <!-- Hero End -->
 
   <!-- Booking Form Start -->
-  <div class="container py-0" id="section1">
-    <section class="contact-form p-5">
-      <h2 class="text-center mb-4">Ready to Cater Your Event?</h2>
-      <!-- Alert Notification -->
-      <div id="alertNotification" class="alert alert-success d-none" role="alert">
-        Your quote request has been submitted successfully!
-      </div>
-      <div class="form-container">
+  <div class="container-fluid py-2 wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="p-5 bg-light rounded contact-form">
+        <h2 class="text-center mb-4">Ready to Cater Your Event?</h2>
+        <!-- Alert Notification -->
+        <div id="alertNotification" class="alert alert-success d-none" role="alert">
+          Your quote request has been submitted successfully!
+        </div>
         <form id="quoteForm">
           <!-- Contact Information -->
           <div class="form-section mb-5">
@@ -134,19 +134,19 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label class="form-label">Full Name <span class="text-danger">*</span></label>
-                <input type="text" name="fullName" class="form-control" required>
+                <input type="text" name="fullName" class="form-control p-3 border-primary bg-light" required>
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Email Address <span class="text-danger">*</span></label>
-                <input type="email" name="email" class="form-control" required>
+                <input type="email" name="email" class="form-control p-3 border-primary bg-light" required>
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Phone Number <span class="text-danger">*</span></label>
-                <input type="tel" name="phone" class="form-control" required>
+                <input type="tel" name="phone" class="form-control p-3 border-primary bg-light" required>
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Best Time to Contact</label>
-                <select name="contactTime" class="form-select">
+                <select name="contactTime" class="form-select p-3 border-primary bg-light">
                   <option value="">Select a time</option>
                   <option value="morning">Morning</option>
                   <option value="afternoon">Afternoon</option>
@@ -162,7 +162,7 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label class="form-label">Event Type <span class="text-danger">*</span></label>
-                <select name="eventType" class="form-select" required>
+                <select name="eventType" class="form-select p-3 border-primary bg-light" required>
                   <option value="">Select event type</option>
                   <option value="wedding">Wedding</option>
                   <option value="corporate">Corporate Event</option>
@@ -173,15 +173,15 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Event Date <span class="text-danger">*</span></label>
-                <input type="date" name="eventDate" class="form-control" required>
+                <input type="date" name="eventDate" class="form-control p-3 border-primary bg-light" required>
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Event Start Time</label>
-                <input type="time" name="eventTime" class="form-control">
+                <input type="time" name="eventTime" class="form-control p-3 border-primary bg-light">
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Event Duration</label>
-                <select name="duration" class="form-select">
+                <select name="duration" class="form-select p-3 border-primary bg-light">
                   <option value="">Select duration</option>
                   <option value="2-4">2-4 hours</option>
                   <option value="4-6">4-6 hours</option>
@@ -190,15 +190,15 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Number of Guests <span class="text-danger">*</span></label>
-                <input type="number" name="guests" class="form-control" required min="1">
+                <input type="number" name="guests" class="form-control p-3 border-primary bg-light" required min="1">
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Event Location</label>
-                <input type="text" name="location" class="form-control">
+                <input type="text" name="location" class="form-control p-3 border-primary bg-light">
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Venue Name (if known)</label>
-                <input type="text" name="venue" class="form-control">
+                <input type="text" name="venue" class="form-control p-3 border-primary bg-light">
               </div>
             </div>
           </div>
@@ -325,7 +325,7 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label class="form-label">Budget Range <span class="text-danger">*</span></label>
-                <select name="budget" class="form-select" required>
+                <select name="budget" class="form-select p-3 border-primary bg-light" required>
                   <option value="">Select budget range</option>
                   <option value="under5000">Under RM 5,000</option>
                   <option value="5000-10000">RM 5,000 - RM 10,000</option>
@@ -336,7 +336,7 @@
               </div>
               <div class="col-12 mb-3">
                 <label class="form-label">Special Requests or Additional Information</label>
-                <textarea name="specialRequests" class="form-control" rows="4"></textarea>
+                <textarea name="specialRequests" class="form-control p-3 border-primary bg-light" rows="4"></textarea>
               </div>
             </div>
           </div>
@@ -349,11 +349,11 @@
                   class="text-danger">*</span></label>
             </div>
             <p class="text-muted"><span class="text-danger">*</span> Required fields</p>
-            <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+            <button type="submit" class="btn btn-primary p-3 rounded-pill w-100">Submit Quote Request</button>
           </div>
         </form>
       </div>
-    </section>
+    </div>
   </div>
   <!-- Booking Form End -->
 
